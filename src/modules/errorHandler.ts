@@ -10,6 +10,6 @@ export const throwError = (errorObject: ThrowErrorParameter) => {
   if (name === 'emptyString' || name === 'emptyObj') {
     return console.error(errorMessages[name]);
   } else {
-    return console.error(name)
+    return console.error(`keysParser ERROR: ${name}`);
   }
 };
