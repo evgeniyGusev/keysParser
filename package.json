@@ -1,0 +1,28 @@
+{
+  "name": "keys-parser",
+  "version": "0.0.7",
+  "type": "module",
+  "description": "Get the value in an object using the string. The string 'person.info.name' will return you 'Pete' from the { person: { info: { name: 'Pete', age: 32 } } }",
+  "author": "evgeniyGusev",
+  "person": {
+    "name": "Evgeniy Gusev",
+    "email": "shchelkalinevgeniy@gmail.com",
+    "url": "https://github.com/evgeniyGusev"
+  },
+  "main": "index.js",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evgeniyGusev/keysParser"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "uglify-js": "^3.16.2"
+  }
+}

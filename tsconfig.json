@@ -1,0 +1,22 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", ".idea"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "baseUrl": "./src",
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "skipLibCheck": true,
+  }
+}
