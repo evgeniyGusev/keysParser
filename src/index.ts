@@ -25,7 +25,7 @@ export const keysParser = (string: String, obj: Object = {}): KeysParserReturn =
     } else {
       const name = lastObject
         ? `The key "${el}" can't be found in the "${lastObject}", because "${lastObject}'s" value is simple type`
-        : `The key "${el}" can't be found...  Maybe you meant something from "${Object.keys(total)}"?`;
+        : `The key "${el}" can't be found...  Maybe you meant something like these: "${Object.keys(total)}"?`;
 
       error = true;
       return throwError({ name });

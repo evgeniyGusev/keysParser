@@ -1,3 +1,4 @@
 /node_modules
 /.idea
 /build
+_test.js
