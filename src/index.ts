@@ -1,4 +1,4 @@
-import { KeysParserReturn } from './modules/types';
+import { KeysParserReturn } from './types';
 import { throwError } from './modules/errorHandler.js';
 
 export const keysParser = (string: String, obj: Object = {}): KeysParserReturn => {

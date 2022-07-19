@@ -1,6 +1,6 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", ".idea"],
+  "exclude": ["node_modules", "build", ".idea", "src/tests"],
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./build",

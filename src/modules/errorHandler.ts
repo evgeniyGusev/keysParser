@@ -1,6 +1,6 @@
-import { ThrowErrorParameter } from './types';
+import { ThrowErrorParameter } from '../types';
 
-export const throwError = (errorObject: ThrowErrorParameter) => {
+export const throwError = (errorObject: ThrowErrorParameter): string => {
   const { name } = errorObject;
   const errorMessages: { emptyString: string; emptyObj: string } = {
     emptyString: "keysParser ERROR: Parameter <string> can't be empty",
@@ -8,8 +8,10 @@ export const throwError = (errorObject: ThrowErrorParameter) => {
   };
 
   if (name === 'emptyString' || name === 'emptyObj') {
-    return console.error(errorMessages[name]);
+    console.error(errorMessages[name]);
+    return errorMessages[name];
   } else {
-    return console.error(`keysParser ERROR: ${name}`);
+    console.error(`keysParser ERROR: ${name}`);
+    return `keysParser ERROR: ${name}`;
   }
 };

@@ -18,11 +18,20 @@
   "keywords": [],
   "license": "ISC",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest --coverage"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.6",
+    "babel-jest": "^28.1.3",
     "jest": "^28.1.3",
     "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1",
     "typescript": "^4.7.4",
     "uglify-js": "^3.16.2"
   }
