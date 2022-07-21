@@ -1,5 +1,7 @@
 import { throwError } from '../modules/errorHandler';
-import { describe, it, expect } from 'vitest';
+import { defaults } from './config/index';
+
+const { describe, expect, it } = defaults;
 
 describe('Error messages', () => {
   it('Correct error message without emptyString parameter', () => {
