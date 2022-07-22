@@ -1,10 +1,14 @@
 # keysParser
 ### Get the value in an object using a string.
 
+[![npm](https://badgen.net/npm/v/keys-parser)](https://www.npmjs.com/package/keys-parser)
+[![npm](https://badgen.net/npm/dw/keys-parser)](https://www.npmjs.com/package/keys-parser)
+[![npm](https://badgen.net/npm/license/keys-parser)](https://www.npmjs.com/package/keys-parser)
+
 The string `'person.info.name'` will return you `'Pete'` from the `{ person: { info: { name: 'Pete', age: 32 } } }`
 
 #### Syntax
-```
+```javascript
 keysParser(string, object)
 ```
 #### Params
@@ -13,11 +17,10 @@ keysParser(string, object)
 `object`[require] - the object to find the key in
 
 #### Examples
-```
+```javascript
 import { keysParser } from 'keys-parser'
 
 const string = 'big.red.fruit'
-
 const object = {
   big: {
     red: {
