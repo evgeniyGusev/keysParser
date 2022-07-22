@@ -12,9 +12,11 @@ The string `'person.info.name'` will return you `'Pete'` from the `{ person: { i
 keysParser(string, object)
 ```
 #### Params
-`string`[require] - a string with the route to the desired key in the Object
 
-`object`[require] - the object to find the key in
+| Param  | Required | Description                                              |
+|:------:|:--------:|----------------------------------------------------------|
+| `string` |   true   | A string with the route to the desired key in the Object |
+| `object` |   true   | The object to find the key in                            |
 
 #### Examples
 ```javascript
